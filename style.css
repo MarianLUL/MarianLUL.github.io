@@ -31,7 +31,17 @@ h2 {
 padding-top: 10px;
 padding-bottom: 10px;
 text-align: center;
+    position: relative
 }
+
+h2::before {
+content: "▶";
+position: absolute;
+left: 10px;
+color: gray;
+}
+
+
 h3{
     text-align: left;
     font-weight: bold;
